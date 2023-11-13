@@ -117,6 +117,7 @@ const SigninFormComponent: FC = () => {
             />
 
             <Button
+              disabled={!validatePasswordLength(password) || !validateEmail(email)}
               variant="contained"
               style={{
                 marginTop: '16px',
